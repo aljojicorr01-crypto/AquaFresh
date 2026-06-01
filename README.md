@@ -1,4 +1,4 @@
-# SistemaAquaFresh 
+# SistemaAquaFresh_1.0.0
 
 Sistema de gestión de ventas para distribuidora de agua, desarrollado en C# Windows Forms.
 
