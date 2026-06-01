@@ -1,4 +1,8 @@
+<<<<<<< HEAD
+# SistemaAquaFresh
+=======
 # SistemaAquaFresh_1.0.0
+>>>>>>> origin/main
 
 Sistema de gestión de ventas para distribuidora de agua, desarrollado en C# Windows Forms.
 
@@ -35,4 +39,8 @@ Compila el proyecto con MSBuild en Windows para verificar que no haya errores.
 
 ## Autor
 Eduardo Endara 
+<<<<<<< HEAD
 Alejandro Jimenez
+=======
+Alejandro Jimenez
+>>>>>>> origin/main
