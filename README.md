@@ -1,8 +1,4 @@
-<<<<<<< HEAD
 # SistemaAquaFresh
-=======
-# SistemaAquaFresh_1.0.0
->>>>>>> origin/main
 
 Sistema de gestión de ventas para distribuidora de agua, desarrollado en C# Windows Forms.
 
@@ -37,10 +33,6 @@ Sistema de gestión de ventas para distribuidora de agua, desarrollado en C# Win
 El pipeline se activa automáticamente en cada push o Pull Request hacia master o develop.
 Compila el proyecto con MSBuild en Windows para verificar que no haya errores.
 
-## Autor
-Eduardo Endara 
-<<<<<<< HEAD
+## Autores
+Eduardo Endara
 Alejandro Jimenez
-=======
-Alejandro Jimenez
->>>>>>> origin/main
