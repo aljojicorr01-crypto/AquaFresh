@@ -1,0 +1,24 @@
+name: CI - SistemaAquaFresh
+
+on:
+  push:
+    branches: [ master, develop ]
+  pull_request:
+    branches: [ master, develop ]
+
+jobs:
+  build:
+    runs-on: windows-latest
+
+    steps:
+      - name: Checkout codigo
+        uses: actions/checkout@v4
+
+      - name: Configurar MSBuild
+        uses: microsoft/setup-msbuild@v2
+
+      - name: Restaurar paquetes NuGet
+        run: nuget restore SistemaAquaFresh_1.0.0\SistemaAquaFresh_1.0.0.slnx
+
+      - name: Compilar proyecto
+        run: msbuild SistemaAquaFresh_1.0.0\SistemaAquaFresh_1.0.0.slnx /p:Configuration=Release
