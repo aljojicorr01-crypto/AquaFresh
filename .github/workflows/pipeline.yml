@@ -18,7 +18,7 @@ jobs:
         uses: microsoft/setup-msbuild@v2
 
       - name: Restaurar paquetes NuGet
-        run: nuget restore SistemaAquaFresh_1.0.0\SistemaAquaFresh_1.0.0.slnx
-
+        run: nuget restore SistemaAquaFresh_1.0.0/SistemaAquaFresh_1.0.0/SistemaAquaFresh_1.0.0.slnx
+        
       - name: Compilar proyecto
-        run: msbuild SistemaAquaFresh_1.0.0\SistemaAquaFresh_1.0.0.slnx /p:Configuration=Release
+        run: msbuild SistemaAquaFresh_1.0.0/SistemaAquaFresh_1.0.0/SistemaAquaFresh_1.0.0.slnx /p:Configuration=Release
