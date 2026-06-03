@@ -21,6 +21,12 @@ namespace SistemaAquaFresh_1._0._0.Entidades
         public int Id_producto { get => id_producto; set => id_producto = value; }
         public string Nombre { get => nombre; set => nombre = value?.Trim(); }
         public string Tipo_envase { get => tipo_envase; set => tipo_envase = value?.Trim(); }
-        public decimal Precio_unitario { get => precio_unitario; set => precio_unitario = value; }
+        public decimal Precio_unitario
+        {
+            get => precio_unitario;
+            set => precio_unitario = value < 0
+                ? throw new ArgumentException("El precio unitario no puede ser negativo.")
+                : value;
+        }
     }
 }
